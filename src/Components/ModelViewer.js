@@ -4,7 +4,8 @@ import { OrbitControls, Html, useGLTF } from '@react-three/drei';
 import gsap from 'gsap';
 
 function Model() {
-    const { scene } = useGLTF(process.env.PUBLIC_URL+'/model.glb');
+    const { scene } = useGLTF('https://avneeshrai07.github.io/Hall3D/model.glb');
+
     return <primitive object={scene} scale={0.5} />;
 }
 
